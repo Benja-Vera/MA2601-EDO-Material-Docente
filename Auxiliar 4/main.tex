@@ -1,0 +1,47 @@
+\documentclass{article}
+\input{imports.tex}
+\input{config.tex}
+
+\begin{document}
+\input{datos-EDO.tex}
+
+\begin{center}
+    \Huge{\textbf{Auxiliar 4}}\\
+\textit{\large{Ecuaciones lineales de orden superior}}\\
+    \normalsize
+    \today
+\end{center}
+
+\begin{enumerate}
+	\item \textbf{(Coeficientes constantes)} Entregue la solución general de las siguientes ecuaciones diferenciales:
+		\begin{enumerate}
+			\item \(y'' - 4y = 0\)
+			\item \(y'' + 4y = 0\)
+			\item \(y''' + y'' + y' + y = 0\)
+			\item \(y''' - y = 0\)
+		\end{enumerate}
+	\item \textbf{(Fórmula de Abel)} Supongamos una ecuación lineal de segundo orden del tipo
+		\begin{equation} \label{eq:var}
+			y'' + p(x)y' + q(x) y = 0
+		\end{equation}
+		y sean \(y_1, y_2\) soluciones de \eqref{eq:var}. Consideremos la cantidad \(W(x)\) definida por
+		\[
+			W(x) = y_1(x)y_2'(x) - y_1'(x)y_2(x) = \begin{vmatrix}
+				y_1(x) & y_2(x) \\ y_1'(x) & y_2'(x)
+			\end{vmatrix}.
+		\]
+		(Cantidad que pronto en cátedra llamaremos \textit{Wronskiano asociado a las soluciones \(y_1, y_2\)}). Encuentre una ecuación diferencial para \(W(x)\) y concluya que el hecho de que \(y_1, y_2\) sean linealmente independientes es una propiedad que no depende del punto inicial.
+	\item \textbf{(Reducción de orden)} Consideremos una ecuación diferencial en la forma de \eqref{eq:var}. Suponga que se conoce una solución \(y_1(x)\) no nula a esta ecuación.
+		\begin{enumerate}
+			\item Definiendo \(y_2(x) = u(x) y_1(x)\) con \(u(x)\) una función a conocer, encuentre una ecuación para \(u\) y con ello la solución general de \eqref{eq:var}.
+			\item Aplique esto a la ecuación
+				\begin{equation} \label{eq:ec}
+					x^2y''(x) - 3xy'(x) + 4y(x) = 0.
+				\end{equation}
+				Sabiendo que \(y_1(x) = x^2\) es una solución, encuentre otra en el intervalo \((0, \infty)\).
+		\end{enumerate}
+	\item \textbf{(Ecuación de Euler-Cauchy)} Volviendo a la ecuación \eqref{eq:ec}, cabe preguntarnos cómo se podría haber resuelto la ecuación sin conocer \(y_1(x) = x^2\) en primer lugar. Para ello, considere el cambio de variables \(x = e^z\) y con él, transforme la ecuación a una en términos de \(y(z)\) a coeficientes constantes. Compare la solución con la que se obtuvo anteriormente.
+
+\end{enumerate}
+
+\end{document}
