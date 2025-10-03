@@ -1,0 +1,33 @@
+\documentclass{article}
+\input{imports.tex}
+\input{config.tex}
+
+\begin{document}
+\input{datos-EDO.tex}
+
+\begin{center}
+    \Huge{\textbf{Auxiliar 1}}\\
+\textit{\large{Diagramas de pendientes}}\\
+    \normalsize
+    8 de agosto de 2025
+\end{center}
+
+\begin{enumerate}
+	\item Considere el siguiente modelo de poblaciones con tasa de natalidad negativa y decreciente:
+$$
+	\frac{\mathrm{d}N}{\mathrm{d}t} = N(t) (-r - sN(t))
+$$
+en que $r, s > 0$.
+\begin{enumerate}
+	\item Construya el diagrama de pendientes asociado a esta ecuación diferencial y discuta sobre el comportamiento de las soluciones $N(t)$ para $N(0) = N_0 \geq 0$.
+	\item Resuelva la ecuación para obtener la solución explícita de $N(t)$ en el caso analizado en la parte anterior.
+\end{enumerate}
+\item Estudie el modelo de población dado por
+$$
+\frac{\mathrm{d}N}{\mathrm{d}t} = N\left(N - \frac{1}{2}\right)(1 - N) =: f(N)
+$$
+en términos de la monotonía y comportamiento asintótico de sus soluciones para diferentes valores de $N(0)$. Realice el diagrama de pendientes correspondiente.
+
+\end{enumerate}
+
+\end{document}
