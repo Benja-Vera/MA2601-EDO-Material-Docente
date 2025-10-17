@@ -1,0 +1,48 @@
+\documentclass{article}
+\input{imports.tex}
+\input{config.tex}
+
+\begin{document}
+\input{datos-EDO.tex}
+
+\begin{center}
+    \Huge{\textbf{Auxiliar 9}}\\
+\textit{\large{Transformada de Laplace}}\\
+    \normalsize
+    \today
+\end{center}
+
+\begin{enumerate}
+	\item Resuelva utilizando la transformada de Laplace el siguiente problema de valor inicial
+\begin{align*}
+y'' + 9y &= 2\sen(3t), \quad t > 0 \\
+y(0) &= 1 \\
+y'(0) &= 0.
+\end{align*}
+\item \textbf{(una EDO de coeficientes variables)} Sabiendo que la ecuación
+$$
+	ty'' + y' + ty = 0
+$$
+tiene una solución $y: [0, \infty) \to \mathbb{R}$ con $y', y''$ de orden exponencial y que cumple $y(0) = 1, y'(0) = 0$:
+\begin{enumerate}
+	\item Demuestre que si $Y(s) = \mathcal{L}[y](s)$, entonces
+$$
+	(1+s^2)Y'(s) + sY(s) = 0.
+$$
+\item Demuestre que $Y(s) = \frac{1}{\sqrt{1+s^2}}$.
+\end{enumerate}
+\item \textbf{(Laplace para sistemas)} Encuentre utilizando la transformada de Laplace las funciones $u, v$ tales que
+\begin{align*}
+\frac{\mathrm{d} u}{\mathrm{d} t} + u + \frac{\mathrm{d} v}{\mathrm{d} t} + v &= 1 \\
+2 \frac{\mathrm{d} u}{\mathrm{d} t} + u + \frac{\mathrm{d} v}{\mathrm{d} t} &= 0,
+\end{align*}
+además de la condición inicial $u(0) = 1, v(0) = 0$.
+\item La siguiente ecuación es la ecuación de movimiento de una masa unida a un resorte que se libera con velocidad cero cuando está deformado a una distancia $x=1$ desde la posición de equilibrio. Después de $\frac{\pi}{2}$, la masa es golpeada con un martillo que ejerce un impulso instantáneo sobre ella:
+$$
+	x'' + 9x = -3 \delta_{ \frac{\pi}{2} }, \quad x(0) = 1, \quad x'(0)=0.
+$$
+Determine la solución $x(t)$ para $t \geq 0$. Describa lo que le ocurre a la masa después de ser golpeada.
+
+\end{enumerate}
+
+\end{document}
